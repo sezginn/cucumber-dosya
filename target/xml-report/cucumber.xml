@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="39.912">
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar" time="15.93">
-<system-out><![CDATA[Given kullanici "http://walmart.com" sayfasina gider........................passed
-And kullanici walmart aramakutusuna "calculator" yazar ve arar..............passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.407">
+<testcase classname="Koala Palace" name="TC10_kullanici bilgleri girerek hotel room olusturur" time="32.06">
+<system-out><![CDATA[Given kullanici koalapalace admin sayfasina gider...........................passed
+And kullanici kullaniciadi ve sifresini girer...............................passed
+Then kullanici giris islemini gerceklestirir................................passed
+Given kullanici hotelroomcreate sayfasina gider.............................passed
+And kullanici hotelroomcreate idhotel bolumunde "Star" secer................passed
+And kullanici hotelroomcreate code bolumune "12345" girer...................passed
+And kullanici hotelroomcreate name bolumune "Techproed" girer...............passed
+And kullanici hotelroomcreate location bolumune "USA" girer.................passed
+And kullanici hotelroomcreate description bolumune "ne yazik ki aciklama yok" girer.passed
+And kullanici hotelroomcreate price bolumune fiyat girer....................passed
+And kullanici hotelroomcreate roomtype bolumunde "Single" secer.............passed
+And kullanici hotelroomcreate maxadult bolumune "2" girer...................passed
+And kullanici hotelroomcreate maxchildren bolumune "3" girer................passed
+And kullanici hotelroomcreate save butonuna tiklar..........................passed
+Then kullanici hotelroomcreate kayit islemini assert eder...................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar 2" time="8.109">
-<system-out><![CDATA[Given kullanici "http://walmart.com" sayfasina gider........................passed
-And kullanici walmart aramakutusuna "watch" yazar ve arar...................passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................passed
-]]></system-out>
-</testcase>
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar 3" time="15.518">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result\-summary\-container&quot;}&#10;  (Session info: chrome=85.0.4183.121)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-U3N2G6BU', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\sezgi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59692}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 29889cf09f16583202c1ca062484a362&#10;*** Element info: {Using=class name, value=result-summary-container}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici "http://walmart.com" sayfasina gider........................passed
-And kullanici walmart aramakutusuna "flower" yazar ve arar..................passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result\-summary\-container"}
-  (Session info: chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-U3N2G6BU', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\sezgi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59692}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 29889cf09f16583202c1ca062484a362
-*** Element info: {Using=class name, value=result-summary-container}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.getText(Unknown Source)
-	at stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir(WalmartStepDefinitions.java:21)
-	at ✽.kullanici walmart sonuc sayisini ekrana yazdirir(file:///C:/Users/sezgi/IdeaProjects/CucumberProje/src/test/resources/features/walmart.feature:6)
-]]></failure>
 </testcase>
 </testsuite>
